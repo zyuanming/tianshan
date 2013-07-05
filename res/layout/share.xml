@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe2e2e2"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        layout="@layout/nav_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="15.0dip"
+        android:layout_weight="1.0"
+        android:background="#ffe2e2e2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <LinearLayout
+                android:id="@id/ll_tencent_blog"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="-3.0dip"
+                android:background="@drawable/shape_top_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/share_qqt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/STR_TENCENT_BLOG"
+                    android:textColor="#ff545454"
+                    android:textSize="18.0sp" />
+
+                <FrameLayout
+                    android:layout_width="64.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10.0dip" >
+
+                    <Button
+                        android:id="@id/btn_tencent"
+                        android:layout_width="64.0dip"
+                        android:layout_height="36.0dip"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:gravity="center"
+                        android:text="@string/STR_LOGOUT"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@id/iv_tencent"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/into_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="-1.0dip"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:id="@id/ll_qq_space"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="-3.0dip"
+                android:background="@drawable/shape_middle_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/share_qqzone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/STR_QQ_SPACE"
+                    android:textColor="#ff545454"
+                    android:textSize="18.0sp" />
+
+                <FrameLayout
+                    android:layout_width="64.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip" >
+
+                    <Button
+                        android:id="@id/btn_qq"
+                        android:layout_width="64.0dip"
+                        android:layout_height="36.0dip"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:gravity="center"
+                        android:text="@string/STR_LOGOUT"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@id/iv_qq"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/into_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="-1.0dip"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:id="@id/ll_sina"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="-3.0dip"
+                android:background="@drawable/shape_middle_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/share_sina" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/STR_SINA"
+                    android:textColor="#ff545454"
+                    android:textSize="18.0sp" />
+
+                <FrameLayout
+                    android:layout_width="64.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip" >
+
+                    <Button
+                        android:id="@id/btn_sina"
+                        android:layout_width="64.0dip"
+                        android:layout_height="36.0dip"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:gravity="center"
+                        android:text="@string/STR_LOGOUT"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@id/iv_sina"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/into_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="-1.0dip"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:id="@id/ll_renren"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="-3.0dip"
+                android:background="@drawable/shape_bottom_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/share_renren" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/STR_RENREN"
+                    android:textColor="#ff545454"
+                    android:textSize="18.0sp" />
+
+                <FrameLayout
+                    android:layout_width="64.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip" >
+
+                    <Button
+                        android:id="@id/btn_renren"
+                        android:layout_width="64.0dip"
+                        android:layout_height="36.0dip"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:gravity="center"
+                        android:text="@string/STR_LOGOUT"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@id/iv_renren"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/into_icon" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

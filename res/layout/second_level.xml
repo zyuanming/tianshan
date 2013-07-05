@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/zhangwobox" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/navbar_box" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/subnav" android:background="@drawable/second_top_repeat_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_below="@id/navbar_box" />
+    <FrameLayout android:id="@id/view_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tool_box" android:layout_below="@id/subnav" />
+    <LinearLayout android:id="@id/tool_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

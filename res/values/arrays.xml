@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_avator">
+        <item>@string/STR_GALLERYPHOTO</item>
+        <item>@string/STR_CAMEARPHOTO</item>
+    </string-array>
+</resources>

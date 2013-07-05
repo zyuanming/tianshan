@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/video_detail_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_comment" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/comment" />
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-3.0dip" android:text="评论" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/share" />
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-3.0dip" android:text="分享" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_favourite" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/btn_fav_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/favourite" />
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-3.0dip" android:text="收藏" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

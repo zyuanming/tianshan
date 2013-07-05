@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10.0dip"
+    android:layout_marginRight="10.0dip"
+    android:layout_marginTop="10.0dip"
+    android:background="@drawable/shape_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/ll_config_share_acct"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/shape_top_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/STR_CONFIG_SHARE_ACCT"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="-1.0dip"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@id/ll_recommend_app"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="-3.0dip"
+        android:background="@drawable/shape_bottom_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/STR_RECOMMEND_APP"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+
+</LinearLayout>

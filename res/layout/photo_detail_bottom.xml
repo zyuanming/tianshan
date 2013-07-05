@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dip" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/photo_title" android:background="#50000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/photo_edit_view" android:background="@drawable/photo_bottom_repeat_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_save" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/save_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_save" />
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="保存" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/save_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_share" />
+            <TextView android:textColor="#ffffffff" android:id="@id/save_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="分享" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_favourite" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/btn_fav_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_collect2" />
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="收藏" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

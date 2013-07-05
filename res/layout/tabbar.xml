@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/zhangwobox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/header_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header_box" />
+
+        <include layout="@layout/subnav" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/view_box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tabbar_bottom_btn_box"
+        android:layout_below="@id/header_box"
+        android:layout_centerInParent="true"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:id="@id/tabbar_bottom_btn_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nav_bottom_repeat_bg"
+        android:orientation="horizontal"
+        android:weightSum="5.0" >
+
+        <LinearLayout
+            android:id="@id/btn_tabbar_news"
+            android:layout_width="64.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/nav_bottom_current_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/nav_bottom_news" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2.0dip"
+                android:gravity="center"
+                android:text="@string/STR_CATEGORY1"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/btn_tabbar_pic"
+            android:layout_width="64.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/nav_bottom_current_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/nav_bottom_photo" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-2.0dip"
+                android:gravity="center"
+                android:text="@string/STR_CATEGORY3"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/btn_tabbar_video"
+            android:layout_width="64.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/nav_bottom_current_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/nav_bottom_video" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-2.0dip"
+                android:gravity="center"
+                android:text="@string/STR_CATEGORY2"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/btn_tabbar_board"
+            android:layout_width="64.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/nav_bottom_current_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/nav_bottom_board" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-2.0dip"
+                android:gravity="center"
+                android:text="@string/STR_CATEGORY5"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/btn_tabbar_bbs"
+            android:layout_width="64.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/nav_bottom_current_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/nav_bottom_bbs" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2.0dip"
+                android:gravity="center"
+                android:text="@string/STR_CATEGORY4"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

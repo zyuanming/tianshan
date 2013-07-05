@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="shadowText">
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="shadowText_black">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+
+    <style name="shadowText_black_bottom" parent="@style/shadowText_black">
+        <item name="android:shadowDy">1.0</item>
+    </style>
+
+    <style name="shadowText_black_bottom_big" parent="@style/shadowText_black">
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+
+    <style name="shadowText_gray" parent="@style/shadowText_black">
+        <item name="android:shadowColor">#ff666666</item>
+    </style>
+
+    <style name="Text_white_bold">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="Text_white_bold_big">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="Box_btn" parent="@android:style/Widget.Button">
+        <item name="android:background">#80000000</item>
+    </style>
+
+    <style name="my_edittext_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/back_selector</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+    </style>
+
+</resources>

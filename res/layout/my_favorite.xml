@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/nav_title_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="35.0dip" layout="@layout/subnav" />
+        <ListView android:id="@id/itemlist" android:background="@*android:color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffc0c0c0" android:dividerHeight="1.0px" android:layout_weight="1.0" />
+        <GridView android:gravity="center" android:id="@id/photogrid" android:background="#ffffffff" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:listSelector="@drawable/girdview_item_bg" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+    </LinearLayout>
+</LinearLayout>

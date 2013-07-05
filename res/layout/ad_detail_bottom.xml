@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/video_detail_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/refresh" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ad_refresh" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_gotochrome" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/gotochome" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ad_gotochrome" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

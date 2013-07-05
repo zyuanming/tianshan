@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/album_back" android:background="@drawable/photo_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="已经到最后一张了 " android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/albumimg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_below="@id/text">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/prealbum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/prenopic_bg" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/pretext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="sssss" android:layout_below="@id/prealbum" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/nextalbum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nextnopic_bg" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/nexttext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="aaaa了 " android:layout_below="@id/nextalbum" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/albumimg">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/prealbum_btn" android:background="@drawable/prepic_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/nextalbum_btn" android:background="@drawable/nextpic_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

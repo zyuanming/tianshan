@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/nav_title_bar" />
+    <FrameLayout android:id="@id/view_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/post_common" android:layout_below="@id/head" />
+    <LinearLayout android:id="@id/post_common" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

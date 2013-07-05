@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/zhangwobox" android:background="#ff00b0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="mainscreen" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/left_content" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/topic_btn" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_alignParentLeft="true" style="@style/Box_btn">
+            <ImageView android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="topic" android:layout_below="@id/btn_icon" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/vedio_btn" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/topic_btn" style="@style/Box_btn">
+            <ImageView android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="vedio" android:layout_below="@id/btn_icon" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/photo_btn" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/topic_btn" android:layout_alignParentLeft="true" style="@style/Box_btn">
+            <ImageView android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="photo" android:layout_below="@id/btn_icon" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/forum_btn" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/photo_btn" android:layout_below="@id/vedio_btn" style="@style/Box_btn">
+            <ImageView android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="forum" android:layout_below="@id/btn_icon" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/news_btn" android:layout_width="186.0dip" android:layout_height="90.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/photo_btn" android:layout_alignParentLeft="true" style="@style/Box_btn">
+            <RelativeLayout android:id="@id/btn_left" android:background="@*android:color/transparent" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="6.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <TextView android:id="@id/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="news" android:layout_below="@id/btn_icon" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/btn_right" android:background="@*android:color/transparent" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/btn_left" android:layout_centerVertical="true">
+                <TextView android:id="@id/btn_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="17" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/Text_white_bold_big" />
+                <TextView android:id="@id/btn_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="top news" android:layout_below="@id/btn_notice" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/express_btn" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/news_btn" android:layout_alignParentLeft="true" style="@style/Box_btn">
+            <ImageView android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="express" android:layout_below="@id/btn_icon" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fav_btn" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/express_btn" android:layout_below="@id/news_btn" style="@style/Box_btn">
+            <ImageView android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="favorite" android:layout_below="@id/btn_icon" android:layout_centerHorizontal="true" style="@style/Text_white_bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/right_content" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageButton android:id="@id/setting_btn" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_toast_success" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageButton android:id="@id/download_btn" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/icon_toast_info" android:layout_below="@id/setting_btn" />
+        <ImageButton android:id="@id/profile_btn" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/icon_toast_error" android:layout_below="@id/download_btn" />
+    </RelativeLayout>
+</RelativeLayout>

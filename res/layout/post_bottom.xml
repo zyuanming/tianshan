@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/gps_view" android:background="@drawable/gps_back" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/gpsprogress" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+        <ImageView android:id="@id/gpstag" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gps_tag" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ff000000" android:id="@id/gpsinfo" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在定位....." android:layout_toRightOf="@id/gpsprogress" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/selectaddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_address" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/post_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/getphoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:src="@drawable/getphoto" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/takephoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:src="@drawable/takephoto" android:layout_toRightOf="@id/getphoto" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/getgps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:src="@drawable/gps_on" android:layout_toRightOf="@id/takephoto" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>
